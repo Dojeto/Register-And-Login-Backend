@@ -10,7 +10,9 @@ router.post('/',async(req,resp)=>{
 
         //3.Bcrypt the user password
         
-        //4.generating our jwt token
+        //4. Inster user information in our database
+        
+        //5.generating our jwt token
     } catch (error) {
         console.log(error.message);
         resp.status(500).send("server Error") ;
