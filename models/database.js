@@ -1,6 +1,6 @@
 import pg from 'pg'
 
-var conString = "postgres://ayanzaxx:MQc6XlknlnE97vosl5859pqWsIXZxlj-@mouse.db.elephantsql.com/" //Can be found in the Details page
+var conString = "xxxx" //Can be found in the Details page
 var client = new pg.Client(conString);
 client.connect(function(err) {
   if(err) {
