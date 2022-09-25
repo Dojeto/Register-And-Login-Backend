@@ -1,6 +1,6 @@
 import pg from 'pg'
 
-var conString = "postgres://ayanzaxx:MQc6XlknlnE97vosl5859pqWsIXZxlj-@mouse.db.elephantsql.com/" //Can be found in the Details page
+var conString = "xxxx" //Can be found in the Details page
 var client = new pg.Client(conString);
 client.connect(function(err) {
   if(err) {
@@ -11,8 +11,6 @@ client.connect(function(err) {
       return console.error('error running query', err);
     }
     console.log(result.rows[0].theTime);
-    // >> output: 2018-08-23T14:02:57.117Z
-    client.end();
   });
 });
 
