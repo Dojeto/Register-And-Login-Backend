@@ -1,6 +1,8 @@
 import pg from 'pg'
+import { config } from 'dotenv';
 
-var conString = "xxxx" //Can be found in the Details page
+config();
+var conString = process.env.DB_URI //Can be found in the Details page
 var client = new pg.Client(conString);
 client.connect(function(err) {
   if(err) {
