@@ -1,7 +1,7 @@
 import express from 'express'
 import cors from 'cors'
 import client from './models/database.js';
-import auth from './routes/jwtAUth.js';
+import auth from './routes/jwtauth.js';
 import dashboard from './routes/dashboard.js'
 import { config } from 'dotenv';
 
