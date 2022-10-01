@@ -6,10 +6,6 @@ import validInfo from "../middleware/validInfo.js";
 import auth from "../middleware/authorization.js";
 const router =Router();
 
-router.get("/",async(req,resp)=>{
-    resp.send("Welcome to home page");
-})
-
 router.post('/register',validInfo,async(req,resp)=>{
     try {
         //1.Destructure the req.body(username ,email,password)

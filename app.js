@@ -1,6 +1,6 @@
 import express from 'express'
 import cors from 'cors'
-import client from './models/database.js';
+import home from './routes/home.js'
 import routers from './routes/jwtauth.js'
 import dashboard from './routes/dashboard.js'
 import { config } from 'dotenv';
@@ -14,6 +14,7 @@ app.use(cors())
 
 //ROUTES
 
+app.use('/',home)
 app.use('/auth',routers)
 app.use('/dashboard',dashboard)
 
