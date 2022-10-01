@@ -2,7 +2,7 @@ import pg from 'pg'
 import { config } from 'dotenv';
 
 config();
-var conString = "postgres://ayanzaxx:MQc6XlknlnE97vosl5859pqWsIXZxlj-@mouse.db.elephantsql.com/ayanzaxx"//Can be found in the Details page
+var conString = process.env.DB_URI //Can be found in the Details page
 var client = new pg.Client(conString);
 client.connect(function(err) {
   if(err) {
