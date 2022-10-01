@@ -1,7 +1,7 @@
 import express from 'express'
 import cors from 'cors'
 import client from './models/database.js';
-import routers from './routes/jwtauth.js'
+// import routers from './routes/jwtauth.js'
 import dashboard from './routes/dashboard.js'
 import { config } from 'dotenv';
 
@@ -14,7 +14,7 @@ app.use(cors())
 
 //ROUTES
 
-app.use('/auth',routers)
+// app.use('/auth',routers)
 app.use('/dashboard',dashboard)
 
 app.listen(port,()=>{
